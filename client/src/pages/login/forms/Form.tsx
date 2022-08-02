@@ -140,7 +140,7 @@ export const Form = observer(({ page, callback }: Props) => {
 
     return (
         <div className={styles.formModal}>
-            <div className={styles.welcome}>
+            {/* <div className={styles.welcome}>
                 <div className={styles.title}>
                     <img src={WaveSVG} draggable={false} />
                     <Text
@@ -161,7 +161,7 @@ export const Form = observer(({ page, callback }: Props) => {
                     />
                     <div>(app.revolt.chat)</div>
                 </div>
-            </div>
+            </div> */}
 
             {/* Preact / React typing incompatabilities */}
             <form
@@ -203,6 +203,11 @@ export const Form = observer(({ page, callback }: Props) => {
                         </I18nError>
                     </Category>
                 )}
+                <span>
+                    <Link to="/login/reset">
+                        <Text id="login.forgot" />
+                    </Link>
+                </span>
                 <Button>
                     <Text
                         id={
@@ -229,7 +234,10 @@ export const Form = observer(({ page, callback }: Props) => {
             )}
             {page === "login" && (
                 <>
-                    <span className={styles.create}>
+                    <Button className={styles.more_btn}>
+                        <Text id="login.more_signin_btn"/>{" "}
+                    </Button>
+                    {/* <span className={styles.create}>
                         <Text id="login.new" />{" "}
                         <Link to="/login/create">
                             <Text id="login.create" />
@@ -246,7 +254,7 @@ export const Form = observer(({ page, callback }: Props) => {
                         <Link to="/login/resend">
                             <Text id="login.resend" />
                         </Link>
-                    </span>
+                    </span> */}
                     {import.meta.env.VITE_API_URL &&
                         import.meta.env.VITE_API_URL !=
                             "https://api.revolt.chat" && (

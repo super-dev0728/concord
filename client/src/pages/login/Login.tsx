@@ -34,14 +34,14 @@ export default observer(() => {
                     />
                 </Helmet>
                 <div className={styles.content}>
-                    <div className={styles.nav}>
+                    {/* <div className={styles.nav}>
                         <a className={styles.logo}>
                             {!("native" in window) && (
-                                <img src={wideSVG} draggable={false} />
+                                <span>CONCORD</span>
                             )}
                         </a>
                         <LocaleSelector />
-                    </div>
+                    </div> */}
                     {/*<div className={styles.middle}>*/}
                     <div className={styles.form}>
                         {/*<div style={styles.version}>
@@ -72,7 +72,7 @@ export default observer(() => {
                     </div>
                     {/*<div className={styles.loginQR}></div>*/}
                     {/*</div>*/}
-                    <div className={styles.bottom}>
+                    {/* <div className={styles.bottom}>
                         <div className={styles.links}>
                             <div className={styles.socials}>
                                 <a
@@ -117,10 +117,10 @@ export default observer(() => {
                             className={styles.attribution}
                             href="https://unsplash.com/@fakurian"
                             target="_blank" rel="noreferrer">
-                            <Text id="general.image_by" /> &lrm;@Milisav &rlm;·
+                            <Text id="general.image_by" /> &lrm;@fakurian &rlm;·
                             unsplash.com
                         </a>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </>

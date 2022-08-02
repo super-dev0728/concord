@@ -19,7 +19,7 @@
         "subtitle2": "Create an account",
         "register": "Register",
         "username": "Username",
-        "email": "Email",
+        "email": "Email or Username",
         "password": "Password",
         "totp": "Authenticator App",
         "recovery": "Recovery Code",
@@ -53,7 +53,8 @@
             "reset": "Failed to reset!",
             "resend": "Failed to resend!"
         },
-        "unofficial_instance": "Third-party instance."
+        "unofficial_instance": "Third-party instance.",
+        "more_signin_btn": "More sign in methods"
     },
     "app": {
         "status": {
